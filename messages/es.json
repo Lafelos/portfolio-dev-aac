@@ -1,0 +1,18 @@
+{
+    "nav": {
+        "home": "Inicio",
+        "tech": "Tecnologías",
+        "experience": "Experiencia",
+        "projects": "Poyectos",
+        "about": "Sobre Mí"
+    },
+    "home": {
+        "title": "Hola 👋, Mi nombre es",
+        "description": "Ingeniero de Software con +5 años de experiencia desde Alicante, España 🇪🇸. Especializado en Inteligencia Artificial.",
+        "contact": "Contáctame"
+    },
+    "tech": {
+        "title": "Tecnologías",
+        "description": "Tecnologías con las que he trabajado recientemente"
+    }
+}

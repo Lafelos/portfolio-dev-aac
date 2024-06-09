@@ -1,0 +1,18 @@
+{
+    "nav": {
+        "home": "Home",
+        "tech": "Tech Stack",
+        "experience": "Experience",
+        "projects": "Projects",
+        "about": "About Me"
+    },
+    "home": {
+        "title": "Hi 👋, My name is",
+        "description": "Software Engineer with +5 years of experience from Alicante, Spain 🇪🇸. Specialised in Artificial Intelligence.",
+        "contact": "Contact me"
+    },
+    "tech": {
+        "title": "My Tech Stack",
+        "description": "Technologies I’ve been working with recently"
+    }
+}
