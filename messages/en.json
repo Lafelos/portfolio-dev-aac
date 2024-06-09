@@ -4,15 +4,48 @@
         "tech": "Tech Stack",
         "experience": "Experience",
         "projects": "Projects",
+        "web_dev": "Web Develop",
+        "ia_dev": "IA & Big Data",
+        "vr_dev": "VR & Games",
         "about": "About Me"
     },
     "home": {
         "title": "Hi 👋, My name is",
-        "description": "Software Engineer with +5 years of experience from Alicante, Spain 🇪🇸. Specialised in Artificial Intelligence.",
+        "description": "👨‍💻 I am a Software Engineer with over 5 years of experience, based in sunny Alicante, Spain 🇪🇸. My passion is technology in general. I specialize in the exciting field of Artificial Intelligence 🤖, where I have developed innovative solutions and collaborated on exciting projects ranging from the first text-to-video conversion system 📹 to computer vision 👁️.",
+        "description_second": "🚀 My goal is to leverage my experience and knowledge to drive technological advancements and solve complex challenges through the power of code 💻.",
         "contact": "Contact me"
     },
     "tech": {
         "title": "My Tech Stack",
         "description": "Technologies I’ve been working with recently"
+    },
+    "work": {
+        "title": "Work Experience",
+        "description": "Where I have applied my knowledge",
+        "work-one": "Co-Founder & COO"
+    },
+    "project": {
+        "title": "Projects",
+        "description": "Things I've built so far"
+    },
+    "about": {
+        "title": "About Me",
+        "description": "Who am I?",
+        "info": "My name is Andrés, although my friends call me Andy. I started with computers at the age of 12 in the computer shop my father had at the time, surrounded by computers and components. Since then, my passion for technology has grown exponentially.",
+        "info_second": "Throughout my career, I have had the opportunity to participate in innovative and challenging projects. One of my most notable achievements is my contribution to the development of the first text-to-video converter, currently known as Anima. This project continues to evolve, and we develop it alongside other advanced AI and VR solutions.",
+        "info_third": "Today, I am dedicated to leading and collaborating on projects that aim to drive technological advancement, leveraging my experience and knowledge to solve complex challenges and create impactful solutions.",
+        "read_more": "Read more",
+        "read_less": "Read less"
+    },
+    "footer": {
+        "description": "Designed and built by Andrés with Love & Coffee",
+        "home": "Home",
+        "tech": "Tech Stack",
+        "experience": "Experience",
+        "projects": "Projects",
+        "web_dev": "Web Develop",
+        "ia_dev": "IA & Big Data",
+        "vr_dev": "VR & Games",
+        "about": "About Me"
     }
 }

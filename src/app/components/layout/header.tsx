@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import { useTranslations } from 'next-intl';
 import ButtonLang from "../../components/ui/buttonLang";
 import ButtonLangMobile from "../../components/ui/buttonLangMobile";
+import ButtonDarkMode from "../ui/buttonDarkMode";
 
 const Header = () => {
     const [showSubMenuTools, setShowSubMenuTools] = useState(false);
@@ -185,9 +186,9 @@ const Header = () => {
 
                             {showSubMenuDownloads && (
                                 <div className="absolute left-1/2 transform -translate-x-1/2 py-2 px-1 w-36 bg-slate-400 rounded-lg shadow-xl z-20 pt-10">
-                                    <a href="/" className="block mb-1 px-2 py-2 font-semibold text-sm text-white text-center rounded-2xl hover:bg-purple-400 hover:text-white">{t('projects')}</a>
-                                    <a href="/" className="block px-2 py-2 font-semibold text-sm text-white text-center rounded-2xl hover:bg-purple-400 hover:text-white">{t('projects')}</a>
-                                    <a href="/" className="block px-2 py-2 font-semibold text-sm text-white text-center rounded-2xl hover:bg-purple-400 hover:text-white">{t('projects')}</a>
+                                    <a href="/" className="block mb-1 px-2 py-2 font-semibold text-sm text-black text-center rounded-2xl hover:bg-purple-400 hover:text-white">{t('web_dev')}</a>
+                                    <a href="/" className="block px-2 py-2 font-semibold text-sm text-black text-center rounded-2xl hover:bg-purple-400 hover:text-white">{t('ia_dev')}</a>
+                                    <a href="/" className="block px-2 py-2 font-semibold text-sm text-black text-center rounded-2xl hover:bg-purple-400 hover:text-white">{t('vr_dev')}</a>
                                 </div>
                             )}
                         </div>
@@ -196,8 +197,12 @@ const Header = () => {
                     </div>
                 </div>
                 <div className="flex items-center">
-                    <span className="inline-flex rounded-md shadow mx-14">
+                    <span className="inline-flex rounded-md mx-5">
                         <ButtonLang />
+                    </span>
+
+                    <span className="inline-flex rounded-md mx-5">
+                        <ButtonDarkMode />
                     </span>
                 </div>
             </div>

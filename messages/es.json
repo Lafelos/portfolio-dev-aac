@@ -4,15 +4,47 @@
         "tech": "Tecnologías",
         "experience": "Experiencia",
         "projects": "Poyectos",
+        "web_dev": "Desarrollo Web",
+        "ia_dev": "IA & Big Data",
+        "vr_dev": "VR & Games",
         "about": "Sobre Mí"
     },
     "home": {
         "title": "Hola 👋, Mi nombre es",
-        "description": "Ingeniero de Software con +5 años de experiencia desde Alicante, España 🇪🇸. Especializado en Inteligencia Artificial.",
+        "description": "👨‍💻 Soy un Ingeniero de Software con más de 5 años de experiencia, con sede en la soleada Alicante, España 🇪🇸. Mi pasión es la tecnología en general. Estoy especializado en el emocionante campo de la Inteligencia Artificial 🤖, donde he desarrollado soluciones innovadoras y he colaborado en proyectos emocionantes que abarcan desde el primer sistema de conversión de texto a video 📹 hasta visión por computadora 👁️.",
+        "description_second": "🚀 Mi objetivo es aprovechar mi experiencia y conocimiento para impulsar el futuro tecnológico y resolver desafíos complejos a través del poder del código 💻.",
         "contact": "Contáctame"
     },
     "tech": {
         "title": "Tecnologías",
         "description": "Tecnologías con las que he trabajado recientemente"
+    },
+    "work": {
+        "title": "Experiencia laboral",
+        "description": "Donde he aplicado mis conocimientos",
+        "work-one": "Cofundador & COO"
+    },
+    "project": {
+        "title": "Proyectos",
+        "description": "Cosas que he creado hasta ahora"
+    },
+    "about": {
+        "title": "Sobre Mí",
+        "description": "¿Quién soy?",
+        "info": "Mi nombre es Andrés, aunque mis amigos me llaman Andy. Empecé con la informática a los 12 años en la tienda de informática que tenía mi padre en aquel momento, rodeado de ordenadores y componentes. Desde entonces, mi pasión por la tecnología ha crecido exponencialmente.",
+        "info_second": "A lo largo de mi carrera, he tenido la oportunidad de participar en proyectos innovadores y desafiantes. Uno de mis logros más destacados es mi contribución al desarrollo del primer conversor de texto a video, conocido actualmente como Anima. Este proyecto sigue evolucionando y lo desarrollamos junto a otras soluciones avanzadas de Inteligencia Artificial y Realidad Virtual.",
+        "info_third": "Hoy en día, me dedico a liderar y colaborar en proyectos que buscan impulsar el futuro tecnológico, aprovechando mi experiencia y conocimiento para resolver desafíos complejos y crear soluciones impactantes.",
+        "read_more": "Leer más",
+        "read_less": "Leer menos"
+    },
+    "footer": {
+        "description": "Diseñado y construido por Andrés con Amor & Café",
+        "home": "Inicio",
+        "tech": "Tecnologías",
+        "experience": "Experiencia",
+        "web_dev": "Desarrollo Web",
+        "ia_dev": "IA & Big Data",
+        "vr_dev": "VR & Games",
+        "about": "Sobre Mí"
     }
 }
