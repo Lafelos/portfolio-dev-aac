@@ -26,7 +26,11 @@
     },
     "project": {
         "title": "Projects",
-        "description": "Things I've built so far"
+        "description": "Things I've built so far",
+        "web_dev": "Web Development",
+        "ia_dev": "IA & Big Data",
+        "games_dev": "VR & Videogames",
+        "info": "Click here to visit"
     },
     "about": {
         "title": "About Me",

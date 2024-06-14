@@ -1,21 +1,27 @@
 import React from 'react';
 
 interface ButtonCardProps {
-    imageSrc: string;
+    imageWebpSrc: string;
+    imageJpgSrc: string;
     title: string;
     description: string;
+    url: string;
 }
   
-const ButtonCard: React.FC<ButtonCardProps> = ({ imageSrc, title, description }) => {
+const ButtonCard: React.FC<ButtonCardProps> = ({ imageWebpSrc, imageJpgSrc, description, title, url }) => {
     return (
         <div className="max-w-sm mx-auto p-4">
-            <button className="bg-white shadow-lg rounded-lg overflow-hidden transform transition-transform hover:scale-105">
-                <img src={imageSrc} alt={title} className="w-full h-48 object-cover" />
-                <div className="p-4">
-                    <h2 className="text-xl font-bold mb-2">{title}</h2>
-                    <p className="text-gray-700">{description}</p>
+            <a href={url} className="block bg-white shadow-lg rounded-lg overflow-hidden transform transition-transform hover:scale-105">
+                <picture>
+                    <source srcSet={imageWebpSrc} type="image/webp" />
+                    <source srcSet={imageJpgSrc} type="image/jpeg" />
+                    <img src={imageJpgSrc} alt={title} className="w-full h-48 object-cover" />
+                </picture>
+                <div className="p-4 text-left">
+                    <h2 className="text-sm text-gray-700 mb-2">{description}</h2>
+                    <p className="text-medium font-bold">{title}</p>
                 </div>
-            </button>
+            </a>
         </div>
     );
 };

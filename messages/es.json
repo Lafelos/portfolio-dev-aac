@@ -26,7 +26,11 @@
     },
     "project": {
         "title": "Proyectos",
-        "description": "Cosas que he creado hasta ahora"
+        "description": "Cosas que he creado hasta ahora",
+        "web_dev": "Desarrollo Web",
+        "ia_dev": "IA & Big Data",
+        "games_dev": "VR & Videojuegos",
+        "info": "Pulsa aquí para ver más"
     },
     "about": {
         "title": "Sobre Mí",

@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@mlc-ai/web-llm": "^0.2.43",
+    "@mlc-ai/web-llm": "^0.2.46",
     "@vercel/speed-insights": "^1.0.11",
     "framer-motion": "^11.2.10",
     "next": "^14.0.0",
