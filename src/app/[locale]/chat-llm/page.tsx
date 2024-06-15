@@ -42,7 +42,7 @@ const ChatLlm = () => {
         const messageText = inputValue.trim();
 
         if (messageText === '') {
-        return;
+            return;
         }
 
         setInputValue('');
@@ -52,20 +52,20 @@ const ChatLlm = () => {
         setMessages([...messages, userMessage]);
 
         try {
-        const chunks = await engine.chat.completions.create({ messages, stream: true });
-        let reply = '';
+            const chunks = await engine.chat.completions.create({ messages, stream: true });
+            let reply = '';
 
-        for await (const chunk of chunks) {
-            const [choice] = chunk.choices;
-            const content = choice?.delta?.content ?? '';
-            reply += content;
-        }
+            for await (const chunk of chunks) {
+                const [choice] = chunk.choices;
+                const content = choice?.delta?.content ?? '';
+                reply += content;
+            }
 
-        setMessages([...messages, { role: 'assistant', content: reply }]);
+            setMessages([...messages, { role: 'assistant', content: reply }]);
         } catch (error) {
-        console.error('Error fetching response from MLCEngine:', error);
+            console.error('Error fetching response from MLCEngine:', error);
         } finally {
-        setButtonDisabled(false);
+            setButtonDisabled(false);
         }
     };
 
@@ -75,7 +75,8 @@ const ChatLlm = () => {
 
     const handleKeyPress = (event: React.KeyboardEvent<HTMLInputElement>) => {
         if (event.key === 'Enter') {
-        handleSubmit(event);
+            event.preventDefault();
+            handleSubmit(event);
         }
     };
 
