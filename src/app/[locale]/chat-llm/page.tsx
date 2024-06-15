@@ -76,7 +76,8 @@ const ChatLlm = () => {
     const handleKeyPress = (event: React.KeyboardEvent<HTMLInputElement>) => {
         if (event.key === 'Enter') {
             event.preventDefault();
-            handleSubmit(event);
+            const formEvent = event as unknown as React.FormEvent<HTMLFormElement>;
+            handleSubmit(formEvent);
         }
     };
 
