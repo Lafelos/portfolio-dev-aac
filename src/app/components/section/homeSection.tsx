@@ -5,7 +5,7 @@ export default function HomeSection() {
     const t = useTranslations('home');
 
     return (
-        <section id="tech" className="text-center py-8">
+        <section id="home" className="text-center py-8">
             <div className="max-w-4xl mx-auto">
                 <div className="flex flex-col space-y-4">
                     <div className="flex items-end">
@@ -17,9 +17,9 @@ export default function HomeSection() {
                     <p className="text-lg text-left mb-3">{t('description')}</p>
                     <p className="text-lg text-left mb-5">{t('description_second')}</p>
                     <div className="flex space-x-4">
-                        <ButtonSocial url="mailto:andres.antolino.cazorla@gmail.com" iconSrc="/images/icons/email.png" alt={t('contact')} buttonText={t('contact')} />
-                        <ButtonSocial url="https://www.linkedin.com/in/andr%C3%A9s-antolino-0b9030ba/" iconSrc="/images/icons/linkedin.png" alt="LinkedIn" buttonText="LinkedIn" />
-                        <ButtonSocial url="https://github.com/Lafelos" iconSrc="/images/icons/github.png" alt="Github" buttonText="Github" />
+                        <ButtonSocial url="mailto:andres.antolino.cazorla@gmail.com" iconSrc="/images/icons/mail.svg" alt={t('contact')} buttonText={t('contact')} />
+                        <ButtonSocial url="https://www.linkedin.com/in/andr%C3%A9s-antolino-0b9030ba/" iconSrc="/images/icons/linkedin.svg" alt="LinkedIn" buttonText="LinkedIn" />
+                        <ButtonSocial url="https://github.com/Lafelos" iconSrc="/images/icons/github.svg" alt="Github" buttonText="Github" />
                     </div>
                 </div>
             </div>

@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import { usePathname } from 'next/navigation';
 import { useTranslations } from 'next-intl';
 import ButtonLang from "../../components/ui/buttonLang";
 import ButtonLangMobile from "../../components/ui/buttonLangMobile";
@@ -18,7 +19,12 @@ const Header = () => {
     const [prevScrollPos, setPrevScrollPos] = useState(0);
     const [isScrollingUp, setIsScrollingUp] = useState(false);
     const t = useTranslations('nav');
-    let currentPage = "/";
+
+    const pathname = usePathname();
+    const segments = pathname.split('/');
+    const locale = segments.length > 1 ? segments[1] : 'en';
+
+    let currentPage = segments.length > 2 ? "/"+segments[2] : "/";
 
     useEffect(() => {
         const handleScroll = () => {
@@ -35,16 +41,6 @@ const Header = () => {
         };
     }, [prevScrollPos]);
 
-    const handleSubMenuEnterTools = () => {
-        setShowSubMenuTools(true);
-        setIsHoveringTools(true);
-    };
-
-    const handleSubMenuLeaveTools = () => {
-        setShowSubMenuTools(false);
-        setIsHoveringTools(false);
-    };
-
     const handleSubMenuEnterDownloads = () => {
         setShowSubMenuDownloads(true);
         setIsHoveringDownloads(true);
@@ -53,26 +49,6 @@ const Header = () => {
     const handleSubMenuLeaveDownloads = () => {
         setShowSubMenuDownloads(false);
         setIsHoveringDownloads(false);
-    };
-
-    const handleSubMenuEnterMyAccount = () => {
-        setShowSubMenuMyAccount(true);
-        setIsHoveringMyAccount(true);
-    };
-
-    const handleSubMenuLeaveMyAccount = () => {
-        setShowSubMenuMyAccount(false);
-        setIsHoveringMyAccount(false);
-    };
-
-    const toggleMobileMenu = () => {
-        setIsMobileMenuOpen(!isMobileMenuOpen);
-
-        if (!isMobileMenuOpen) {
-            document.body.style.overflowY = 'hidden';
-        } else {
-            document.body.style.overflowY = 'auto';
-        }
     };
 
     const toggleSubMenuTools = () => {
@@ -86,6 +62,11 @@ const Header = () => {
     return (
         <nav className={`flex top-0 left-0 right-0 items-center justify-between lg:justify-center p-3 bg-slate-200 h-100 ${isMobileMenuOpen ? "bg-black-menu z-20 fixed" : `bg-black-menu z-20 transition-all duration-1000 ease-in-out transform
         ${isMenuFixed ? 'fixed' : 'absolute'} ${isScrollingUp && !isMenuFixed ? '-translate-y-full' : 'translate-y-0'}`}`}>
+            <div className="flex items-center z-50 xl:mx-16">
+                <a href="/" aria-label="Home">
+                    <img src="/images/icons/logo_lafelos.png" height="50" width="50" />
+                </a>
+            </div>
             {isMobileMenuOpen && (
                 <div className="fixed inset-0 bg-black z-20 flex justify-start pt-28">
                     <div className="p-4 rounded-md overflow-y-auto h-screen w-screen">
@@ -174,25 +155,25 @@ const Header = () => {
                     <div className="hidden md:flex lg:space-x-4 py-1 px-1 shadow lg:rounded-3xl bg-slate-400">
                         <a href="/"
                            className={`font-medium w-28 text-center py-1 rounded-2xl hover:bg-purple-400 hover:text-white transition duration-150 ease-in-out ${currentPage === "/" || currentPage === "/#home" ? "bg-purple-400 text-white" : "text-black"}`}>{t('home')}</a>
-                        <a href="/about" className={`font-medium w-40 text-center py-1 rounded-2xl hover:bg-purple-400 hover:text-white transition duration-150 ease-in-out ${currentPage === "/#tech" ? "bg-purple-400 text-white" : "text-black"}`}>{t('tech')}</a>
-                        <a href="/about" className={`font-medium w-40 text-center py-1 rounded-2xl hover:bg-purple-400 hover:text-white transition duration-150 ease-in-out ${currentPage === "/#tech" ? "bg-purple-400 text-white" : "text-black"}`}>{t('experience')}</a>
+                        <a href="/#tech" className={`font-medium w-40 text-center py-1 rounded-2xl hover:bg-purple-400 hover:text-white transition duration-150 ease-in-out ${currentPage === "/#tech" ? "bg-purple-400 text-white" : "text-black"}`}>{t('tech')}</a>
+                        <a href="/#work" className={`font-medium w-40 text-center py-1 rounded-2xl hover:bg-purple-400 hover:text-white transition duration-150 ease-in-out ${currentPage === "/#tech" ? "bg-purple-400 text-white" : "text-black"}`}>{t('experience')}</a>
                         <div className="relative flex" onMouseEnter={handleSubMenuEnterDownloads} onMouseLeave={handleSubMenuLeaveDownloads}>
                             <a href="#"
                                className={`font-medium w-36 text-center py-1 rounded-2xl hover:bg-purple-400 hover:text-white transition duration-150 ease-in-out z-50
-                                          ${currentPage === "/#projects" ? "bg-purple-400 text-white" : "text-black"} ${showSubMenuDownloads && "bg-purple-400 text-white"}`}
+                                          ${currentPage === "/desarrollo-web" ? "bg-purple-400 text-white" : "text-black"} ${showSubMenuDownloads && "bg-purple-400 text-white"}`}
                             >
                                 {t('projects')}
                             </a>
 
                             {showSubMenuDownloads && (
                                 <div className="absolute left-1/2 transform -translate-x-1/2 py-2 px-1 w-36 bg-slate-400 rounded-lg shadow-xl z-20 pt-10">
-                                    <a href="/" className="block mb-1 px-2 py-2 font-semibold text-sm text-black text-center rounded-2xl hover:bg-purple-400 hover:text-white">{t('web_dev')}</a>
-                                    <a href="/" className="block px-2 py-2 font-semibold text-sm text-black text-center rounded-2xl hover:bg-purple-400 hover:text-white">{t('ia_dev')}</a>
-                                    <a href="/" className="block px-2 py-2 font-semibold text-sm text-black text-center rounded-2xl hover:bg-purple-400 hover:text-white">{t('vr_dev')}</a>
+                                    <a href={`/${locale}/desarrollo-web`} className={`block mb-1 px-2 py-2 font-semibold text-sm text-black text-center rounded-2xl hover:bg-purple-400 hover:text-white ${currentPage === "/desarrollo-web" ? "bg-purple-400 text-white" : "text-black"}`}>{t('web_dev')}</a>
+                                    <a href={`/${locale}/desarrollo-ia`} className="block px-2 py-2 font-semibold text-sm text-black text-center rounded-2xl hover:bg-purple-400 hover:text-white">{t('ia_dev')}</a>
+                                    <a href={`/${locale}/desarrollo-juegos`} className="block px-2 py-2 font-semibold text-sm text-black text-center rounded-2xl hover:bg-purple-400 hover:text-white">{t('vr_dev')}</a>
                                 </div>
                             )}
                         </div>
-                        {<a href="/contact"
+                        {<a href="/#about"
                            className={`font-medium w-32 text-center py-1 rounded-2xl hover:bg-purple-400 hover:text-white transition duration-150 ease-in-out ${currentPage === "/contact" ? "bg-purple-400 text-white" : "text-black"}`}>{t('about')}</a>}
                     </div>
                 </div>

@@ -5,7 +5,7 @@ export default function AboutSection() {
     const t = useTranslations('about');
 
     return (
-        <section id="home" className="text-center py-8 mt-16 mb-20">
+        <section id="about" className="text-center py-8 mt-16 mb-20">
             <h1 className="text-3xl font-bold mb-4">{t('title')}</h1>
             <p className="text-lg mb-16">{t('description')}</p>
 

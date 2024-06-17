@@ -4,43 +4,55 @@ import { useTranslations } from 'next-intl';
 const TAGS = {
   NEXT: {
     name: "Next.js",
-    class: "bg-black text-white",
-    icon: "",
+    class: "bg-white text-black border border-black",
+    icon: "/images/icons/nextjs.svg",
   },
   TAILWIND: {
     name: "Tailwind CSS",
     class: "bg-[#003159] text-white",
-    icon: "",
+    icon: "/images/icons/tailwind.svg",
+  },
+  REACTJS: {
+    name: "ReactJS",
+    class: "bg-[#006A6C] text-white",
+    icon: "/images/icons/react.svg",
+  },
+  LARAVEL: {
+    name: "Laravel",
+    class: "bg-[#6C0000] text-white",
+    icon: "/images/icons/laravel.svg",
   },
 };
 
-const EXAMPLE_PROJECTS = [
-  {
-    title: "Ejemplo de Proyecto 1",
-    description:
-      "Descripción del proyecto 1. Utiliza Next.js y Tailwind CSS para...",
-    link: "https://example.com/proyecto-1",
-    github: "https://github.com/ejemplo/proyecto-1",
-    image: "/images/proyecto-1.webp",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
-  },
-  {
-    title: "Ejemplo de Proyecto 2",
-    description:
-      "Descripción del proyecto 2. Utiliza Next.js y Tailwind CSS para...",
-    link: "https://example.com/proyecto-2",
-    github: "https://github.com/ejemplo/proyecto-2",
-    image: "/images/proyecto-2.webp",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
-  },
-];
-
 export default function Home() {
-  const t = useTranslations('nav');
+  const t = useTranslations('web_development');
+
+  const WEB_PROJECTS = [
+    {
+      title: "HechicerIA",
+      description: t("description_hia"),
+      link: "https://hechicer-ia.com/",
+      image: "/images/projects/hechiceria/hechiceria-home.webp",
+      tags: [TAGS.REACTJS, TAGS.TAILWIND, TAGS.LARAVEL],
+    },
+    {
+      title: "Portfolio Dev",
+      description: t("description_portfolio"),
+      link: "https://www.andresantolino.com/es",
+      github: "https://github.com/Lafelos/portfolio-dev-aac",
+      image: "/images/projects/portfolio/portfolio.webp",
+      tags: [TAGS.NEXT, TAGS.TAILWIND],
+    },
+  ];
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between pt-24 bg-white text-black">
-      <Project projects={EXAMPLE_PROJECTS} tags={TAGS} />
+    <main className="flex min-h-screen flex-col items-center justify-between bg-white text-black pb-20">
+      <div id="tech" className="text-center py-8 mt-16 w-full mx-auto container">
+        <h1 className="text-3xl font-bold mb-4">{t('title')}</h1>
+        <p className="text-lg mb-16">{t('description')}</p>
+      </div>
+
+      <Project projects={WEB_PROJECTS} tags={TAGS} />
     </main>
   );
 }

@@ -18,56 +18,58 @@ interface Project {
 
 interface ProjectProps {
   projects: Project[];
-  tags: Record<string, Tag>; // Define las etiquetas como un objeto con claves de string y valores de tipo Tag
+  tags: Record<string, Tag>;
 }
 
 const Project: React.FC<ProjectProps> = ({ projects, tags }) => {
   return (
-    <div className="flex flex-col gap-y-16">
-      {projects.map(({ image, title, description, tags, link, github }, index) => (
-        <article key={index} className="flex flex-col space-x-0 space-y-8 group md:flex-row md:space-x-8 md:space-y-0">
-          <div className="w-full md:w-1/2">
-            <div className="relative flex flex-col items-center col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform shadow-xl overflow-clip rounded-xl sm:rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50">
-              <img alt="Project Image" className="object-cover object-top w-full h-56 transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105" loading="lazy" src={image} />
+    <section className={`section scroll-m-20 w-full mx-auto container lg:max-w-4xl md:max-w-2xl`}>
+      <div className="flex flex-col gap-y-16">
+        {projects.map(({ image, title, description, tags, link, github }, index) => (
+          <article key={index} className="flex flex-col space-x-0 space-y-8 group md:flex-row md:space-x-8 md:space-y-0">
+            <div className="w-full md:w-1/2">
+              <div className="relative flex flex-col items-center col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform shadow-xl overflow-clip rounded-xl sm:rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50">
+                <img alt={title} className="object-cover object-top w-full h-56 transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105" loading="lazy" src={image} />
+              </div>
             </div>
-          </div>
 
-          <div className="w-full md:w-1/2 md:max-w-lg">
-            <h3 className="text-2xl font-bold text-gray-800 dark:text-gray-100">
-              {title}
-            </h3>
-            <div className="flex flex-wrap mt-2">
-              <ul className="flex flex-row mb-2 gap-x-2">
-                {tags.map((tag, idx) => (
-                  <li key={idx}>
-                    <span className={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1 px-2`}>
-                      <img src={tag.icon} alt={tag.name} className="w-full h-48 object-cover" />
-                      {tag.name}
-                    </span>
-                  </li>
-                ))}
-              </ul>
+            <div className="w-full md:w-1/2 md:max-w-lg">
+              <h3 className="text-2xl font-bold text-gray-800 dark:text-gray-100">
+                {title}
+              </h3>
+              <div className="flex flex-wrap mt-2">
+                <ul className="flex flex-row mb-2 gap-x-2">
+                  {tags.map((tag, idx) => (
+                    <li key={idx}>
+                      <span className={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1 px-2 w-full`}>
+                        <img src={tag.icon} alt={tag.name} className="w-8 h-4" />
+                        {tag.name}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
 
-              <div className="mt-2 text-gray-700 dark:text-gray-400">{description}</div>
-              <footer className="flex items-end justify-start mt-4 gap-x-4">
-                {github && (
-                  <LinkButton href={github}>
-                    <img src="/images/icons/linkedin.png" alt="Icono Github" className="w-5 h-5 mr-2" />
-                    Code
-                  </LinkButton>
-                )}
-                {link && (
-                  <LinkButton href={link}>
-                    <img src="/images/icons/linkedin.png" alt="Icono Github" className="w-5 h-5 mr-2" />
-                    Preview
-                  </LinkButton>
-                )}
-              </footer>
+                <div className="mt-2 text-gray-700 dark:text-gray-400">{description}</div>
+                <footer className="flex items-end justify-start mt-4 gap-x-4">
+                  {github && (
+                    <LinkButton href={github}>
+                      <img src="/images/icons/github.svg" alt="Icono Github" className="w-5 h-5 mr-2" />
+                      Code
+                    </LinkButton>
+                  )}
+                  {link && (
+                    <LinkButton href={link}>
+                      <img src="/images/icons/link.svg" alt="Icono Github" className="w-5 h-5 mr-2" />
+                      Preview
+                    </LinkButton>
+                  )}
+                </footer>
+              </div>
             </div>
-          </div>
-        </article>
-      ))}
-    </div>
+          </article>
+        ))}
+      </div>
+    </section>
   );
 }
 

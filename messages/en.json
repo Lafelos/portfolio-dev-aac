@@ -32,6 +32,12 @@
         "games_dev": "VR & Videogames",
         "info": "Click here to visit"
     },
+    "web_development": {
+        "title": "Web Projects",
+        "description": "It's a space dedicated to showcasing a variety of websites and applications I've developed. Here, you'll find examples of my work in web design and development, demonstrating how I transform ideas into functional and attractive digital experiences.",
+        "description_hia": "I develop the first text-to-video conversion app. I lead programming, manage servers, and integrate technologies. Additionally, I develop AI applications and create video games using Unreal Engine and Unity.",
+        "description_portfolio": "I designed my portfolio using Next.js and Tailwind CSS, creating a modern and responsive interface. In it, you can see my projects, skills, and my passion for advanced technologies."
+    },
     "about": {
         "title": "About Me",
         "description": "Who am I?",
