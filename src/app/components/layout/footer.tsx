@@ -5,7 +5,7 @@ export default function Footer() {
 
     return (
         <footer className="flex flex-col w-full bg-slate-200 text-black mt-auto">
-            <div className="flex space-x-4 pt-8 xl:mx-44 mx-auto xl:mb-0 mb-8 justify-end">
+            <div className="flex space-x-4 pt-8 xl:mx-44 mx-auto justify-end">
                 <a href="mailto:andres.antolino.cazorla@gmail.com" target="_blank" rel="noopener noreferrer">
                     <img src="/images/icons/email.png" alt="Email Andrés" className="w-5 h-5" />
                 </a>
@@ -17,7 +17,11 @@ export default function Footer() {
                 </a>
             </div>
     
-            <hr className="border-t-2 border-gray-400 my-6 mx-44 xl:flex hidden" />
+            <hr className="border-t-2 border-gray-400 my-6 xl:mx-44 mx-3" />
+
+            <div className="flex pb-8 px-5 xl:hidden">
+                <p>{t('description')}</p>
+            </div>
     
             <div className="flex justify-between items-center pb-8 mx-44 xl:flex hidden">
                 <div className="flex space-x-4">
