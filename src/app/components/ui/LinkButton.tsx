@@ -10,6 +10,7 @@ const LinkButton: React.FC<LinkButtonProps> = ({ href, children }) => {
     <a
       href={href}
       role="link"
+      target="_blank"
       className="inline-flex items-center justify-center gap-2 px-3 py-2 space-x-2 text-base text-black 
       transition bg-white dark:bg-gray-800 dark:text-white border border-gray-600 
       focus-visible:ring-yellow-500/80 text-md hover:border-transparent hover:bg-gradient-to-r hover:from-purple-400 hover:to-purple-600 hover:text-white 

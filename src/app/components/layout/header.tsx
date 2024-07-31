@@ -41,6 +41,16 @@ const Header = () => {
         };
     }, [prevScrollPos]);
 
+    const toggleMobileMenu = () => {
+        setIsMobileMenuOpen(!isMobileMenuOpen);
+
+        if (!isMobileMenuOpen) {
+            document.body.style.overflowY = 'hidden';
+        } else {
+            document.body.style.overflowY = 'auto';
+        }
+    };
+
     const handleSubMenuEnterDownloads = () => {
         setShowSubMenuDownloads(true);
         setIsHoveringDownloads(true);
@@ -67,53 +77,46 @@ const Header = () => {
                     <img src="/images/icons/logo_lafelos.png" height="50" width="50" />
                 </a>
             </div>
+            <div className="ml-auto xl:hidden z-50">
+                <button type="button" id="main-menu" aria-label="Main menu" aria-haspopup="true" className="inline-flex items-center justify-center p-2 rounded-md text-black transition duration-150 ease-in-out" onClick={toggleMobileMenu}>
+                    {isMobileMenuOpen ? (
+                        <svg stroke="currentColor" fill="none" viewBox="0 0 24 24" className="h-6 w-6"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                    ) : (
+                        <svg stroke="currentColor" fill="none" viewBox="0 0 24 24" className="h-6 w-6"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                    )}
+                </button>
+            </div>
             {isMobileMenuOpen && (
-                <div className="fixed inset-0 bg-black z-20 flex justify-start pt-28">
+                <div className="fixed inset-0 bg-slate-200 z-20 flex justify-start pt-28">
                     <div className="p-4 rounded-md overflow-y-auto h-screen w-screen">
-                        <a href="/" className={`flex items-center justify-between py-2 px-4 text-lg text-white border-t-2 border-white
-                        ${currentPage === "/" ? "text-yellow-main" : "text-white"}`}>
+                        <a href={`/${locale}/`} className={`flex items-center justify-between py-2 px-4 text-lg border-t-2 border-black
+                        ${currentPage === "/" ? "text-purple-400" : "text-black"}`}>
                             <span>{t('home')}</span>
                             <svg stroke="currentColor" fill="none" viewBox="0 0 24 24" className="w-6 h-6">
                                 <path d="M12 19l7-7-7-7M5 12h14" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                             </svg>
                         </a>
                         <div className="relative">
-                            <a href="#" className={`flex items-center justify-between py-2 px-4 text-lg text-white border-t-2 border-white
-                            ${currentPage === "/current-anima" || currentPage === "/ava" ? "text-yellow-main" : "text-white"}`} onClick={toggleSubMenuTools}>
-                                <span>{t('tools')}</span>
-                                <svg className="w-6 h-6 ml-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                                    {showSubMenuTools ? (
-                                        <path d="M5 12h14"></path>
-                                    ) : (
-                                        <path d="M12 6v6m0 0v6m0-6h6m-6 0H6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                                    )}
+                            <a href={`/${locale}/#tech`} className={`flex items-center justify-between py-2 px-4 text-lg border-t-2 border-black
+                            ${currentPage === "/#tech" ? "text-purple-400" : "text-black"}`}>
+                                <span>{t('tech')}</span>
+                                <svg stroke="currentColor" fill="none" viewBox="0 0 24 24" className="w-6 h-6">
+                                    <path d="M12 19l7-7-7-7M5 12h14" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                                 </svg>
                             </a>
-                            {showSubMenuTools && (
-                                <div className="absolute top-full mt-2">
-                                    <a href="/current-anima" className={`block py-1 px-4 text-medium text-white
-                                    ${currentPage === "/current-anima" ? "text-yellow-main" : "text-white hover:underline"}`}>
-                                        Current Anima
-                                    </a>
-                                    <a href="/ava" className={`block py-1 px-4 text-medium text-white
-                                    ${currentPage === "/ava" ? "text-yellow-main" : "text-white hover:underline"}`}>
-                                        AVA
-                                    </a>
-                                </div>
-                            )}
                         </div>
-                        <a href="/about" className={`flex items-center justify-between py-2 px-4 text-lg text-white border-t-2 border-white
-                        ${currentPage === "/about" ? "text-yellow-main" : "text-white"}`} style={{marginTop: showSubMenuTools ? 'calc(2rem + 65px)' : '0'}}>
-                            <span>{t('speller')}</span>
+                        <a href={`/${locale}/#work`} className={`flex items-center justify-between py-2 px-4 text-lg border-t-2 border-black
+                        ${currentPage === "/#work" ? "text-purple-400" : "text-black"}`} style={{marginTop: showSubMenuTools ? 'calc(2rem + 65px)' : '0'}}>
+                            <span>{t('experience')}</span>
                             <svg stroke="currentColor" fill="none" viewBox="0 0 24 24" className="w-6 h-6">
                                 <path d="M12 19l7-7-7-7M5 12h14" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                             </svg>
                         </a>
                         <div className="relative">
-                            <a href="#" className={`flex items-center justify-between py-2 px-4 text-lg text-white border-t-2 border-white
-                               ${currentPage === "/downloads/current-anima" || currentPage === "/downloads/ava" ? "text-yellow-main" : "text-white"}`}
+                            <a href="#" className={`flex items-center justify-between py-2 px-4 text-lg border-t-2 border-black
+                               ${currentPage === "/desarrollo-web" || currentPage === "/desarrollo-ia-bigdata"  || currentPage === "/desarrollo-juegos" ? "text-purple-400" : "text-black"}`}
                                onClick={toggleSubMenuDownloads}>
-                                <span>{t('downloads')}</span>
+                                <span>{t('projects')}</span>
                                 <svg className="w-6 h-6 ml-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                                     {showSubMenuDownloads ? (
                                         <path d="M5 12h14"></path>
@@ -124,21 +127,25 @@ const Header = () => {
                             </a>
                             {showSubMenuDownloads && (
                                 <div className="absolute top-full mt-2">
-                                    <a href="/current-anima#download" className={`block py-1 px-4 text-medium text-white
-                                    ${currentPage === "/downloads/current-anima" ? "text-yellow-main" : "text-white hover:underline"}`}>
-                                        Current Anima
+                                    <a href={`/${locale}/desarrollo-web`} className={`block py-1 px-4 text-medium
+                                    ${currentPage === "/desarrollo-web" ? "text-purple-400" : "text-black hover:underline"}`}>
+                                        {t('web_dev')}
                                     </a>
-                                    <a href="/ava#try_ava" className={`block py-1 px-4 text-medium text-white
-                                    ${currentPage === "/downloads/ava" ? "text-yellow-main" : "text-white hover:underline"}`}>
-                                        AVA
+                                    <a href={`/${locale}/desarrollo-ia-bigdata`} className={`block py-1 px-4 text-medium
+                                    ${currentPage === "/desarrollo-ia-bigdata" ? "text-purple-400" : "text-black hover:underline"}`}>
+                                        {t('ia_dev')}
+                                    </a>
+                                    <a href={`/${locale}/desarrollo-juegos`} className={`block py-1 px-4 text-medium
+                                    ${currentPage === "/desarrollo-juegos" ? "text-purple-400" : "text-black hover:underline"}`}>
+                                        {t('vr_dev')}
                                     </a>
                                 </div>
                             )}
                         </div>
 
-                        {<a href="/contact" className={`flex items-center justify-between py-2 px-4 text-lg text-white border-t-2 border-b-2 border-white
-                        ${currentPage === "/contact" ? "text-yellow-main" : "text-white"}`} style={{marginTop: showSubMenuDownloads ? 'calc(2rem + 65px)' : '0'}}>
-                            <span>{t('contact')}</span>
+                        {<a href={`/${locale}/#about`} className={`flex items-center justify-between py-2 px-4 text-lg border-t-2 border-b-2 border-black
+                        ${currentPage === "/#about" ? "text-purple-400" : "text-black"}`} style={{marginTop: showSubMenuDownloads ? 'calc(2rem + 80px)' : '0'}}>
+                            <span>{t('about')}</span>
                             <svg stroke="currentColor" fill="none" viewBox="0 0 24 24" className="w-6 h-6">
                                 <path d="M12 19l7-7-7-7M5 12h14" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                             </svg>
@@ -160,7 +167,7 @@ const Header = () => {
                         <div className="relative flex" onMouseEnter={handleSubMenuEnterDownloads} onMouseLeave={handleSubMenuLeaveDownloads}>
                             <a href="#"
                                className={`font-medium w-36 text-center py-1 rounded-2xl hover:bg-purple-400 hover:text-white transition duration-150 ease-in-out z-50
-                                          ${currentPage === "/desarrollo-web" ? "bg-purple-400 text-white" : "text-black"} ${showSubMenuDownloads && "bg-purple-400 text-white"}`}
+                                          ${currentPage === "/desarrollo-web" || currentPage === "/desarrollo-ia-bigdata" || currentPage === "/desarrollo-juegos" ? "bg-purple-400 text-white" : "text-black"} ${showSubMenuDownloads && "bg-purple-400 text-white"}`}
                             >
                                 {t('projects')}
                             </a>
@@ -168,8 +175,8 @@ const Header = () => {
                             {showSubMenuDownloads && (
                                 <div className="absolute left-1/2 transform -translate-x-1/2 py-2 px-1 w-36 bg-slate-400 rounded-lg shadow-xl z-20 pt-10">
                                     <a href={`/${locale}/desarrollo-web`} className={`block mb-1 px-2 py-2 font-semibold text-sm text-black text-center rounded-2xl hover:bg-purple-400 hover:text-white ${currentPage === "/desarrollo-web" ? "bg-purple-400 text-white" : "text-black"}`}>{t('web_dev')}</a>
-                                    <a href={`/${locale}/desarrollo-ia`} className="block px-2 py-2 font-semibold text-sm text-black text-center rounded-2xl hover:bg-purple-400 hover:text-white">{t('ia_dev')}</a>
-                                    <a href={`/${locale}/desarrollo-juegos`} className="block px-2 py-2 font-semibold text-sm text-black text-center rounded-2xl hover:bg-purple-400 hover:text-white">{t('vr_dev')}</a>
+                                    <a href={`/${locale}/desarrollo-ia-bigdata`} className={`block px-2 py-2 font-semibold text-sm text-black text-center rounded-2xl hover:bg-purple-400 hover:text-white ${currentPage === "/desarrollo-ia-bigdata" ? "bg-purple-400 text-white" : "text-black"}`}>{t('ia_dev')}</a>
+                                    <a href={`/${locale}/desarrollo-juegos`} className={`block px-2 py-2 font-semibold text-sm text-black text-center rounded-2xl hover:bg-purple-400 hover:text-white ${currentPage === "/desarrollo-juegos" ? "bg-purple-400 text-white" : "text-black"}`}>{t('vr_dev')}</a>
                                 </div>
                             )}
                         </div>

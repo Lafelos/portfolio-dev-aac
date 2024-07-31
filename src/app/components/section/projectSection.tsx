@@ -29,14 +29,14 @@ export default function ProjectSection() {
                     imageJpgSrc="/images/projects/inteligencia-artifial.jpg"
                     description={t('info')}
                     title={t('ia_dev')}
-                    url={`/${locale}/inteligencia-artificial`}
+                    url={`/${locale}/desarrollo-ia-bigdata`}
                 />
                 <ButtonCard 
                     imageWebpSrc="/images/projects/videogames.webp"
                     imageJpgSrc="/images/projects/videogames.jpg"
                     description={t('info')}
                     title={t('games_dev')}
-                    url={`/${locale}/videojuegos`}
+                    url={`/${locale}/desarrollo-juegos`}
                 />
             </div>
         </section>

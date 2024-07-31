@@ -5,7 +5,7 @@ export default function Footer() {
 
     return (
         <footer className="flex flex-col w-full bg-slate-200 text-black mt-auto">
-            <div className="flex space-x-4 pt-8 mx-44 justify-end">
+            <div className="flex space-x-4 pt-8 xl:mx-44 mx-auto xl:mb-0 mb-8 justify-end">
                 <a href="mailto:andres.antolino.cazorla@gmail.com" target="_blank" rel="noopener noreferrer">
                     <img src="/images/icons/email.png" alt="Email Andrés" className="w-5 h-5" />
                 </a>
@@ -17,16 +17,16 @@ export default function Footer() {
                 </a>
             </div>
     
-            <hr className="border-t-2 border-gray-400 my-6 mx-44" />
+            <hr className="border-t-2 border-gray-400 my-6 mx-44 xl:flex hidden" />
     
-            <div className="flex justify-between items-center pb-8 mx-44">
+            <div className="flex justify-between items-center pb-8 mx-44 xl:flex hidden">
                 <div className="flex space-x-4">
                     <a href="#home" className="hover:underline">{t('home')}</a>
                     <a href="#tech" className="hover:underline">{t('tech')}</a>
                     <a href="#experience" className="hover:underline">{t('experience')}</a>
-                    <a href="#home" className="hover:underline">{t('web_dev')}</a>
-                    <a href="#home" className="hover:underline">{t('ia_dev')}</a>
-                    <a href="#home" className="hover:underline">{t('vr_dev')}</a>
+                    <a href="/desarrollo-web" className="hover:underline">{t('web_dev')}</a>
+                    <a href="/desarrollo-ia-bigdata" className="hover:underline">{t('ia_dev')}</a>
+                    <a href="/desarrollo-juegos" className="hover:underline">{t('vr_dev')}</a>
                     <a href="#about" className="hover:underline">{t('about')}</a>
                 </div>
                 <div>

@@ -10,19 +10,27 @@
         "about": "About Me"
     },
     "home": {
-        "title": "Hi 👋, My name is",
+        "title": "Hi 👋, I am",
         "description": "👨‍💻 I am a Software Engineer with over 5 years of experience, based in sunny Alicante, Spain 🇪🇸. My passion is technology in general. I specialize in the exciting field of Artificial Intelligence 🤖, where I have developed innovative solutions and collaborated on exciting projects ranging from the first text-to-video conversion system 📹 to computer vision 👁️.",
         "description_second": "🚀 My goal is to leverage my experience and knowledge to drive technological advancements and solve complex challenges through the power of code 💻.",
         "contact": "Contact me"
     },
     "tech": {
         "title": "My Tech Stack",
-        "description": "Technologies I’ve been working with recently"
+        "description": "Technologies I've been working with recently"
     },
     "work": {
         "title": "Work Experience",
         "description": "Where I have applied my knowledge",
-        "work-one": "Co-Founder & COO"
+        "work-one": "Co-Founder & COO",
+        "description_hechicer": "Team leader of the programming department. Server management. Integrator. Development of applications with artificial intelligence. Video game development with Unreal Engine and Unity.",
+        "description_cortina": "Web development and web applications for internal management. Report creation, shipping label management, customer management, invoice management, among others.",
+        "description_movilfly": "Development of web applications for internal work management and reporting.",
+        "description_eurobyte": "Repair, maintenance of equipment and mobile terminals. Administration of IT companies, servers and clients.",
+        "january": "January",
+        "february": "February",
+        "august": "August",
+        "september": "September"
     },
     "project": {
         "title": "Projects",
@@ -37,6 +45,20 @@
         "description": "It's a space dedicated to showcasing a variety of websites and applications I've developed. Here, you'll find examples of my work in web design and development, demonstrating how I transform ideas into functional and attractive digital experiences.",
         "description_hia": "I develop the first text-to-video conversion app. I lead programming, manage servers, and integrate technologies. Additionally, I develop AI applications and create video games using Unreal Engine and Unity.",
         "description_portfolio": "I designed my portfolio using Next.js and Tailwind CSS, creating a modern and responsive interface. In it, you can see my projects, skills, and my passion for advanced technologies."
+    },
+    "ai_development": {
+        "title": "AI and Big Data projects",
+        "description": "This section presents my projects developed in the field of artificial intelligence and Big Data. These works reflect my technical skills and my focus on the analysis of large volumes of data and the implementation of advanced AI solutions.",
+        "title_cp": "AI for Counting People",
+        "description_cp": "This application uses the YOLO (You Only Look Once) object detection algorithm to count people in real time. Developed in Python, the app draws a rectangle on the screen and counts the people crossing it. The counter increases when a person crosses from right to left and decreases when crossing from left to right.",
+        "title_sn": "Sign Language Number Recognition",
+        "description_sn": "This repository contains a model trained to recognize numbers in sign language. The model has been trained with a dataset of digits in sign language and is able to accurately identify hand signs representing numbers from 0 to 9."
+    },
+    "game_development": {
+        "title": "VR and Video Game Projects",
+        "description": "This section presents my projects developed with Unity and Unreal Engine, focused on the creation of virtual reality experiences and video games. These works reflect my technical skills and my focus on the development of interactive environments and advanced simulations.",
+        "description_ca": "Current Anima is the first artificial intelligence on the market capable of converting text into 3D videos. Using natural language processing and Unreal Engine, Current Anima transforms textual descriptions into high-quality 3D animations.",
+        "description_ava": "AVA is a 3D AI-enabled chatbot designed to revolutionize customer service. Using advanced artificial intelligence, AVA provides personalized assistance and real-time information retrieval, improving user interaction and increasing operational efficiency."
     },
     "about": {
         "title": "About Me",
