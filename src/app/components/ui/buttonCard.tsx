@@ -15,7 +15,7 @@ const ButtonCard: React.FC<ButtonCardProps> = ({ imageWebpSrc, imageJpgSrc, desc
                 <picture>
                     <source srcSet={imageWebpSrc} type="image/webp" />
                     <source srcSet={imageJpgSrc} type="image/jpeg" />
-                    <img src={imageJpgSrc} alt={title} className="w-full h-48 object-cover" />
+                    <img loading="lazy" src={imageJpgSrc} alt={title} className="w-full h-48 object-cover" />
                 </picture>
                 <div className="p-4 text-left">
                     <h2 className="text-sm text-gray-700 mb-2">{description}</h2>

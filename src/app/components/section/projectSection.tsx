@@ -16,7 +16,7 @@ export default function ProjectSection() {
             <h1 className="text-3xl font-bold mb-4">{t('title')}</h1>
             <p className="text-lg mb-16">{t('description')}</p>
 
-            <div className="grid grid-cols-3 gap-4 mt-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
                 <ButtonCard 
                     imageWebpSrc="/images/projects/tecno-web.webp"
                     imageJpgSrc="/images/projects/tecno-web.jpg"

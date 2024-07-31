@@ -46,13 +46,13 @@ export default function Home() {
   ];
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between bg-white text-black pb-20">
+    <section className="flex w-full min-h-screen flex-col items-center justify-between bg-white text-black pb-20">
       <div id="tech" className="text-center py-8 mt-16 w-full mx-auto container">
         <h1 className="text-3xl font-bold mb-4">{t('title')}</h1>
         <p className="text-lg mb-16">{t('description')}</p>
       </div>
 
       <Project projects={WEB_PROJECTS} tags={TAGS} />
-    </main>
+    </section>
   );
 }

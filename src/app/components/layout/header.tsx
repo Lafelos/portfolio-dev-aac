@@ -60,7 +60,7 @@ const Header = () => {
     };
 
     return (
-        <nav className={`flex top-0 left-0 right-0 items-center justify-between lg:justify-center p-3 bg-slate-200 h-100 ${isMobileMenuOpen ? "bg-black-menu z-20 fixed" : `bg-black-menu z-20 transition-all duration-1000 ease-in-out transform
+        <nav className={`flex w-full items-center justify-between lg:justify-center p-3 bg-slate-200 h-100 ${isMobileMenuOpen ? "bg-black-menu z-20 fixed" : `bg-black-menu z-20 transition-all duration-1000 ease-in-out transform
         ${isMenuFixed ? 'fixed' : 'absolute'} ${isScrollingUp && !isMenuFixed ? '-translate-y-full' : 'translate-y-0'}`}`}>
             <div className="flex items-center z-50 xl:mx-16">
                 <a href="/" aria-label="Home">

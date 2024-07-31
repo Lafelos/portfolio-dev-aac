@@ -4,7 +4,7 @@ export default function Footer() {
     const t = useTranslations('footer');
 
     return (
-        <footer className="bg-slate-200 text-black">
+        <footer className="flex flex-col w-full bg-slate-200 text-black mt-auto">
             <div className="flex space-x-4 pt-8 mx-44 justify-end">
                 <a href="mailto:andres.antolino.cazorla@gmail.com" target="_blank" rel="noopener noreferrer">
                     <img src="/images/icons/email.png" alt="Email Andrés" className="w-5 h-5" />
