@@ -41,9 +41,9 @@ const Project: React.FC<ProjectProps> = ({ projects, tags }) => {
                 <ul className="flex flex-row mb-2 gap-x-2">
                   {tags.map((tag, idx) => (
                     <li key={idx}>
-                      <span className={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1 px-2 w-full`}>
+                      <span className={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1 px-1 w-full`}>
                         <img src={tag.icon} alt={tag.name} className="w-8 h-4" />
-                        {tag.name}
+                        <span className='pr-3'>{tag.name}</span>
                       </span>
                     </li>
                   ))}

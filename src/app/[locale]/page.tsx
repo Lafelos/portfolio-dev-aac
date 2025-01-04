@@ -9,7 +9,7 @@ export default function Home() {
   const t = useTranslations('nav');
 
   return (
-    <main className="flex flex-col bg-white text-black pt-24 w-full">
+    <main className="flex flex-col bg-white dark:bg-gray-800 text-black dark:text-white pt-24 w-full">
       <HomeSection />
       <TechSection />
       <WorkSection />

@@ -13,7 +13,7 @@ export default function AboutSection() {
                 <img 
                     src="/images/photo_andres.jpg" 
                     alt="About Me" 
-                    className="w-64 h-64 object-cover border-4 bg-gradient-to-r from-purple-400 via-purple-500 to-purple-600 p-1 mb-4 md:mb-0 mx-auto md:mx-0"
+                    className="w-64 h-64 object-cover bg-gradient-to-r from-purple-400 via-purple-500 to-purple-600 p-1 mb-4 md:mb-0 mx-auto md:mx-0"
                 />
                 <div className='sm:text-lg text-sm text-left flex-1'>
                     <p className='mb-2'>{t('info')}</p>

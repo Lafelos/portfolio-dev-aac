@@ -24,6 +24,7 @@
         "description": "Donde he aplicado mis conocimientos",
         "work-one": "Cofundador & COO",
         "description_hechicer": "Coordinador del departamento de programación. Gestión de servidores. Integrador. Desarrollo de aplicaciones con inteligencia artificial. Desarrollo de videojuegos con Unreal Engine y Unity.",
+        "description_bitperdido": "Podcast sobre videojuegos 🎮 y tecnología (programación, IA y más) 💻 relacionada con los videojuegos. Únete para análisis, noticias y charlas sobre las últimas innovaciones. ¡Descubramos juntos ese bit perdido!",
         "description_cortina": "Desarrollo web y aplicaciones web para gestión interna. Creación de informes, gestión de etiquetas de envío, gestión de clientes, gestión de facturas, entre otros.",
         "description_movilfly": "Desarrollo de aplicaciones web para la gestión y elaboración de informes de trabajo internos.",
         "description_eurobyte": "Reparación, mantenimiento de equipos y terminales móviles. Administración de empresas informáticas, servidores y clientes.",
@@ -52,7 +53,9 @@
         "title_cp": "IA para Contar Personas",
         "description_cp": "Esta aplicación utiliza el algoritmo de detección de objetos YOLO (You Only Look Once) para contar personas en tiempo real. Desarrollada en Python, la app dibuja un rectángulo en la pantalla y cuenta las personas que lo atraviesan. El contador aumenta cuando una persona cruza de derecha a izquierda y disminuye cuando cruza de izquierda a derecha.",
         "title_sn": "Reconocimiento de números en Lenguaje de Señas",
-        "description_sn": "Este repositorio contiene un modelo entrenado para reconocer números en lenguaje de señas. El modelo se ha entrenado con un conjunto de datos de dígitos en lenguaje de señas y es capaz de identificar con precisión los signos manuales que representan números del 0 al 9."
+        "description_sn": "Este repositorio contiene un modelo entrenado para reconocer números en lenguaje de señas. El modelo se ha entrenado con un conjunto de datos de dígitos en lenguaje de señas y es capaz de identificar con precisión los signos manuales que representan números del 0 al 9.",
+        "title_next": "Generador de Video (Modelo Next-01)",
+        "description_next": "El Generador de Video Next-01 es un modelo de IA avanzado que convierte texto en videos personalizados de alta calidad, ideal para marketing, educación y redes sociales, combinando rapidez y creatividad."
     },
     "game_development": {
         "title": "Proyectos VR y Videojuegos",

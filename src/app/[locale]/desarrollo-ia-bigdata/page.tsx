@@ -19,11 +19,11 @@ export default function Home() {
 
   const WEB_PROJECTS = [
     {
-      title: t("title_cp"),
-      description: t("description_cp"),
-      github: "https://github.com/Lafelos/people-counter-with-yolo",
-      image: "/images/projects/count-people/count-people-yolo.webp",
-      tags: [TAGS.PYTHON, TAGS.YOLO],
+      title: t("title_next"),
+      description: t("description_next"),
+      link: "https://hechicer-ia.com/next/explorer",
+      image: "/images/projects/next/next-app.webp",
+      tags: [TAGS.PYTHON],
     },
     {
       title: t("title_sn"),
@@ -33,10 +33,17 @@ export default function Home() {
       image: "/images/projects/sign-number/sign-number.webp",
       tags: [TAGS.PYTHON],
     },
+    {
+      title: t("title_cp"),
+      description: t("description_cp"),
+      github: "https://github.com/Lafelos/people-counter-with-yolo",
+      image: "/images/projects/count-people/count-people-yolo.webp",
+      tags: [TAGS.PYTHON, TAGS.YOLO],
+    },
   ];
 
   return (
-    <section className="flex w-full min-h-screen flex-col items-center justify-between bg-white text-black pb-20 px-5">
+    <section className="flex w-full min-h-screen flex-col items-center justify-between bg-white text-black dark:bg-gray-800 dark:text-white pb-20 px-5">
       <div id="tech" className="text-center py-8 mt-16 w-full mx-auto container">
         <h1 className="text-3xl font-bold mb-4">{t('title')}</h1>
         <p className="text-lg mb-16">{t('description')}</p>

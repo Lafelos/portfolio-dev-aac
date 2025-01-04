@@ -24,6 +24,7 @@
         "description": "Where I have applied my knowledge",
         "work-one": "Co-Founder & COO",
         "description_hechicer": "Team leader of the programming department. Server management. Integrator. Development of applications with artificial intelligence. Video game development with Unreal Engine and Unity.",
+        "description_bitperdido": "Podcast about video games 🎮 and technology (programming, AI and more) 💻 related to video games. Join us for analysis, news and chats about the latest innovations - let's discover that missing bit together!",
         "description_cortina": "Web development and web applications for internal management. Report creation, shipping label management, customer management, invoice management, among others.",
         "description_movilfly": "Development of web applications for internal work management and reporting.",
         "description_eurobyte": "Repair, maintenance of equipment and mobile terminals. Administration of IT companies, servers and clients.",
@@ -52,7 +53,9 @@
         "title_cp": "AI for Counting People",
         "description_cp": "This application uses the YOLO (You Only Look Once) object detection algorithm to count people in real time. Developed in Python, the app draws a rectangle on the screen and counts the people crossing it. The counter increases when a person crosses from right to left and decreases when crossing from left to right.",
         "title_sn": "Sign Language Number Recognition",
-        "description_sn": "This repository contains a model trained to recognize numbers in sign language. The model has been trained with a dataset of digits in sign language and is able to accurately identify hand signs representing numbers from 0 to 9."
+        "description_sn": "This repository contains a model trained to recognize numbers in sign language. The model has been trained with a dataset of digits in sign language and is able to accurately identify hand signs representing numbers from 0 to 9.",
+        "title_next": "Video Generator (Model Next-01)",
+  "description_next": "The Next-01 Video Generator is an advanced AI model that converts text into high-quality personalized videos, ideal for marketing, education, and social media, combining speed and creativity."
     },
     "game_development": {
         "title": "VR and Video Game Projects",

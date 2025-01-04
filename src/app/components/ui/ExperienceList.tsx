@@ -14,6 +14,13 @@ const ExperienceList: React.FC = () => {
       link: "https://hechicer-ia.com/",
     },
     {
+      date: t("august")+" 2024 - Actualmente...",
+      title: "Podcaster - Marca Personal",
+      company: "El Bit Perdido",
+      description: t("description_bitperdido"),
+      link: "https://www.youtube.com/@ElBitPerdido",
+    },
+    {
       date: t("february")+" 2022 - "+t("september")+" 2023",
       title: "Full Stack Developer",
       company: "Cortinadecor (Hounter Douglas Europe)",

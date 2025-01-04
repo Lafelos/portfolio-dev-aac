@@ -9,7 +9,7 @@ export default function HomeSection() {
             <div className="max-w-4xl mx-auto">
                 <div className="flex flex-col space-y-4">
                     <div className="flex items-end">
-                        <div className="rounded-full overflow-hidden w-20 h-20 border-4 border-red-500 mr-4">
+                        <div className="rounded-full overflow-hidden w-20 h-20 border-4 border-purple-600 mr-4">
                             <img src="/images/photo_andres.jpg" alt="Imagen de Andrés" className="w-full h-full object-cover" />
                         </div>
                         <h1 className="md:text-3xl text-lg font-bold text-left">{t('title')} Láfelos</h1>
