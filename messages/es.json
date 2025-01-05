@@ -15,6 +15,10 @@
         "description_second": "🚀 Mi objetivo es aprovechar mi experiencia y conocimiento para impulsar el futuro tecnológico y resolver desafíos complejos a través del poder del código 💻.",
         "contact": "Contáctame"
     },
+    "podcast": {
+        "title": "El Bit Perdido - Podcast",
+        "description": "Es un podcast donde exploramos el apasionante mundo de los videojuegos y la tecnología. Desde las últimas novedades y noticias, hasta debates sobre las tendencias más relevantes, analizamos los distintos puntos que marcan la industria gamer y tecnológica. Únete a Andrés y Adrián en cada episodio, donde no faltan el humor, la nostalgia y las opiniones sinceras sobre los temas que más nos apasionan."
+    },
     "tech": {
         "title": "Tecnologías",
         "description": "Tecnologías con las que he trabajado recientemente"

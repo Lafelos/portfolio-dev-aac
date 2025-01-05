@@ -15,6 +15,10 @@
         "description_second": "🚀 My goal is to leverage my experience and knowledge to drive technological advancements and solve complex challenges through the power of code 💻.",
         "contact": "Contact me"
     },
+    "podcast": {
+        "title": "El Bit Perdido (The Lost Bit) - Podcast",
+        "description": "This is a podcast where we explore the exciting world of video games and technology. From the latest news and developments, to debates on the most relevant trends, we analyse the different points that mark the gaming and technology industry. Join Andrés and Adrián in each episode, where there is no shortage of humour, nostalgia and honest opinions on the topics we are most passionate about."
+    },
     "tech": {
         "title": "My Tech Stack",
         "description": "Technologies I've been working with recently"
