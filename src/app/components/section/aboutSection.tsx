@@ -5,9 +5,9 @@ export default function AboutSection() {
     const t = useTranslations('about');
 
     return (
-        <section id="about" className="text-center py-8 mt-16 mb-20">
+        <section id="about" className="text-center py-8 mt-10 mb-20">
             <h1 className="text-3xl font-bold mb-4">{t('title')}</h1>
-            <p className="text-lg mb-16">{t('description')}</p>
+            <p className="sm:text-lg text-sm mb-16">{t('description')}</p>
 
             <div className="flex flex-col md:flex-row md:space-x-4 2xl:w-6/12 md:w-8/12 w-11/12 mx-auto">
                 <img 

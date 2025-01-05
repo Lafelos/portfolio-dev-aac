@@ -4,9 +4,9 @@ export default function TechSection() {
     const t = useTranslations('tech');
 
     return (
-        <section id="tech" className="flex flex-col lg:w-9/12 xl:w-7/12 w-full mx-auto text-center py-8 px-3 mt-16">
+        <section id="tech" className="flex flex-col lg:w-9/12 xl:w-7/12 w-full mx-auto text-center py-8 px-3 mt-10">
             <h1 className="text-3xl font-bold mb-4">{t('title')}</h1>
-            <p className="text-lg md:mb-16 mb-8">{t('description')}</p>
+            <p className="sm:text-lg text-sm md:mb-16 mb-8">{t('description')}</p>
 
             <div className="grid grid-cols-5 md:gap-20 gap-6 mt-6">
                 <img src="/images/icons/tech/html.png" alt="HTML" title="HTML" className="md:w-24 md:h-24 w-12 h-12 mx-auto transform transition-transform duration-300 hover:scale-110" />

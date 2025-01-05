@@ -12,9 +12,9 @@ export default function ProjectSection() {
     const locale = segments.length > 1 ? segments[1] : 'en';
 
     return (
-        <section id="projects" className="text-center py-8 mt-16">
+        <section id="projects" className="text-center py-8 mt-10">
             <h1 className="text-3xl font-bold mb-4">{t('title')}</h1>
-            <p className="text-lg mb-16">{t('description')}</p>
+            <p className="sm:text-lg text-sm mb-16">{t('description')}</p>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6 auto-rows-fr">
                 <ButtonCard 
