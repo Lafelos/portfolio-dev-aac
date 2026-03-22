@@ -12,6 +12,11 @@ const TAGS = {
     class: "bg-[#C87AFF] text-black border border-black",
     icon: "/images/icons/yolo.svg",
   },
+  N8N: {
+    name: "n8n",
+    class: "bg-[#FFABAB] text-black border border-black",
+    icon: "/images/icons/n8n.svg",
+  },
 };
 
 export default function Home() {
@@ -24,6 +29,13 @@ export default function Home() {
       link: "https://hechicer-ia.com/next/explorer",
       image: "/images/projects/next/next-app.webp",
       tags: [TAGS.PYTHON],
+    },
+    {
+      title: t("title_chatai"),
+      description: t("description_chatai"),
+      link: "https://pregomx.com/",
+      image: "/images/projects/prego/agent_web.webp",
+      tags: [TAGS.N8N],
     },
     {
       title: t("title_sn"),

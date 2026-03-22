@@ -63,7 +63,9 @@
         "title_sn": "Sign Language Number Recognition",
         "description_sn": "This repository contains a model trained to recognize numbers in sign language. The model has been trained with a dataset of digits in sign language and is able to accurately identify hand signs representing numbers from 0 to 9.",
         "title_next": "Video Generator (Model Next-01)",
-  "description_next": "The Next-01 Video Generator is an advanced AI model that converts text into high-quality personalized videos, ideal for marketing, education, and social media, combining speed and creativity."
+        "description_next": "The Next-01 Video Generator is an advanced AI model that converts text into high-quality personalized videos, ideal for marketing, education, and social media, combining speed and creativity.",
+        "title_chatai": "Conversational AI Chatbot with n8n",
+        "description_chatai": "Development of a web-based conversational assistant automated with n8n, capable of answering queries about services, marketing, and artificial intelligence. Designed to enhance customer support and conversion."
     },
     "game_development": {
         "title": "VR and Video Game Projects",

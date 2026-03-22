@@ -63,7 +63,9 @@
         "title_sn": "Reconocimiento de números en Lenguaje de Señas",
         "description_sn": "Este repositorio contiene un modelo entrenado para reconocer números en lenguaje de señas. El modelo se ha entrenado con un conjunto de datos de dígitos en lenguaje de señas y es capaz de identificar con precisión los signos manuales que representan números del 0 al 9.",
         "title_next": "Generador de Video (Modelo Next-01)",
-        "description_next": "El Generador de Video Next-01 es un modelo de IA avanzado que convierte texto en videos personalizados de alta calidad, ideal para marketing, educación y redes sociales, combinando rapidez y creatividad."
+        "description_next": "El Generador de Video Next-01 es un modelo de IA avanzado que convierte texto en videos personalizados de alta calidad, ideal para marketing, educación y redes sociales, combinando rapidez y creatividad.",
+        "title_chatai": "Chatbot IA Conversacional con n8n",
+        "description_chatai": "Desarrollo de un asistente conversacional integrado en web, automatizado con n8n, capaz de responder consultas sobre servicios, marketing e inteligencia artificial. Diseñado para mejorar la atención al cliente y la conversión."
     },
     "game_development": {
         "title": "Proyectos VR y Videojuegos",
