@@ -43,6 +43,20 @@ export default function Home() {
       image: "/images/projects/portfolio/portfolio.webp",
       tags: [TAGS.NEXT, TAGS.TAILWIND],
     },
+    {
+      title: "Rox Studio",
+      description: t("description_rox"),
+      link: "https://rox-studio.com/",
+      image: "/images/projects/rox/rox.webp",
+      tags: [TAGS.NEXT, TAGS.TAILWIND],
+    },
+    {
+      title: "PREGO MX",
+      description: t("description_pregomx"),
+      link: "https://pregomx.com/",
+      image: "/images/projects/prego/pregomx.webp",
+      tags: [TAGS.NEXT, TAGS.TAILWIND],
+    },
   ];
 
   return (
