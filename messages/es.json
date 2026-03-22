@@ -16,8 +16,8 @@
         "contact": "Contáctame"
     },
     "podcast": {
-        "title": "El Bit Perdido - Podcast",
-        "description": "Es un podcast donde exploramos el apasionante mundo de los videojuegos y la tecnología. Desde las últimas novedades y noticias, hasta debates sobre las tendencias más relevantes, analizamos los distintos puntos que marcan la industria gamer y tecnológica. Únete a Andrés y Adrián en cada episodio, donde no faltan el humor, la nostalgia y las opiniones sinceras sobre los temas que más nos apasionan."
+        "title": "Skynet is coming - Podcast",
+        "description": "Es un podcast centrado en el apasionante mundo de la inteligencia artificial y su impacto en la sociedad actual. A lo largo de cada episodio se analizan las últimas innovaciones, tendencias y aplicaciones de la IA, abordando su influencia en ámbitos como la economía, el trabajo, la filosofía y el futuro de la humanidad. Con un enfoque divulgativo y reflexivo, el podcast combina análisis, debate y visión crítica para entender cómo esta tecnología está transformando el mundo. Un espacio para explorar, cuestionar y anticipar el futuro de la inteligencia artificial."
     },
     "tech": {
         "title": "Tecnologías",
@@ -28,14 +28,16 @@
         "description": "Donde he aplicado mis conocimientos",
         "work-one": "Cofundador & COO",
         "description_hechicer": "Coordinador del departamento de programación. Gestión de servidores. Integrador. Desarrollo de aplicaciones con inteligencia artificial. Desarrollo de videojuegos con Unreal Engine y Unity.",
-        "description_bitperdido": "Podcast sobre videojuegos 🎮 y tecnología (programación, IA y más) 💻 relacionada con los videojuegos. Únete para análisis, noticias y charlas sobre las últimas innovaciones. ¡Descubramos juntos ese bit perdido!",
+        "description_mystherai": "Coordinador del departamento de programación. Gestión de servidores. Integrador. Desarrollo de aplicaciones con inteligencia artificial. Desarrollo de videojuegos con Unreal Engine y Unity.",
+        "description_bitperdido": "Podcast sobre inteligencia artificial y su impacto en la sociedad. Análisis, debate y tendencias para entender cómo la IA está transformando el mundo.",
         "description_cortina": "Desarrollo web y aplicaciones web para gestión interna. Creación de informes, gestión de etiquetas de envío, gestión de clientes, gestión de facturas, entre otros.",
         "description_movilfly": "Desarrollo de aplicaciones web para la gestión y elaboración de informes de trabajo internos.",
         "description_eurobyte": "Reparación, mantenimiento de equipos y terminales móviles. Administración de empresas informáticas, servidores y clientes.",
         "january": "Enero",
         "february": "Febrero",
         "august": "Agosto",
-        "september": "Septiembre"
+        "september": "Septiembre",
+        "now": "Actualmente"
     },
     "project": {
         "title": "Proyectos",

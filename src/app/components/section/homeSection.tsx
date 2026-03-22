@@ -18,7 +18,7 @@ export default function HomeSection() {
                     <p className="sm:text-lg text-sm text-left mb-5">{t('description_second')}</p>
                     <div className="flex space-x-4">
                         <ButtonSocial url="mailto:andres.antolino.cazorla@gmail.com" iconSrc="/images/icons/mail.svg" alt={t('contact')} buttonText={t('contact')} classes="text-sm" />
-                        <ButtonSocial url="https://www.linkedin.com/in/andr%C3%A9s-antolino-0b9030ba/" iconSrc="/images/icons/linkedin.svg" alt="LinkedIn" buttonText="LinkedIn" classes="text-sm" />
+                        <ButtonSocial url="https://www.linkedin.com/in/andy-antolino-0b9030ba/" iconSrc="/images/icons/linkedin.svg" alt="LinkedIn" buttonText="LinkedIn" classes="text-sm" />
                         <ButtonSocial url="https://github.com/Lafelos" iconSrc="/images/icons/github.svg" alt="Github" buttonText="Github" classes="text-sm" />
                     </div>
                 </div>

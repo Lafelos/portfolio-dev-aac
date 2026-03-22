@@ -7,18 +7,25 @@ const ExperienceList: React.FC = () => {
 
   const EXPERIENCE = [
     {
-      date: t("january")+" 2020 - Actualmente...",
-      title: "Co-Founder & COO",
+      date: t("january")+" 2026 - "+t("now")+"...",
+      title: "Co-Founder & CTO",
+      company: "MystherAI",
+      description: t("description_mystherai"),
+      link: "https://mystherai.com/",
+    },
+    {
+      date: t("august")+" 2025 - "+t("now")+"...",
+      title: "Podcast - Marca Personal",
+      company: "Skynet is coming",
+      description: t("description_bitperdido"),
+      link: "https://www.youtube.com/@skynetiscomingpodcast",
+    },
+    {
+      date: t("january")+" 2020 - "+t("january")+" 2026",
+      title: "Co-Founder & CTO",
       company: "HechicerIA",
       description: t("description_hechicer"),
       link: "https://hechicer-ia.com/",
-    },
-    {
-      date: t("august")+" 2024 - Actualmente...",
-      title: "Podcaster - Marca Personal",
-      company: "El Bit Perdido",
-      description: t("description_bitperdido"),
-      link: "https://www.youtube.com/@ElBitPerdido",
     },
     {
       date: t("february")+" 2022 - "+t("september")+" 2023",

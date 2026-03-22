@@ -16,8 +16,8 @@
         "contact": "Contact me"
     },
     "podcast": {
-        "title": "El Bit Perdido (The Lost Bit) - Podcast",
-        "description": "This is a podcast where we explore the exciting world of video games and technology. From the latest news and developments, to debates on the most relevant trends, we analyse the different points that mark the gaming and technology industry. Join Andrés and Adrián in each episode, where there is no shortage of humour, nostalgia and honest opinions on the topics we are most passionate about."
+        "title": "Skynet is coming - Podcast",
+        "description": "This is a podcast focused on the fascinating world of artificial intelligence and its impact on modern society. In each episode, it explores the latest innovations, trends, and real-world applications of AI, examining its influence on areas such as the economy, work, philosophy, and the future of humanity. With an informative and reflective approach, the podcast combines analysis, discussion, and critical thinking to understand how this technology is transforming the world. A space to explore, question, and anticipate the future of artificial intelligence."
     },
     "tech": {
         "title": "My Tech Stack",
@@ -28,14 +28,16 @@
         "description": "Where I have applied my knowledge",
         "work-one": "Co-Founder & COO",
         "description_hechicer": "Team leader of the programming department. Server management. Integrator. Development of applications with artificial intelligence. Video game development with Unreal Engine and Unity.",
-        "description_bitperdido": "Podcast about video games 🎮 and technology (programming, AI and more) 💻 related to video games. Join us for analysis, news and chats about the latest innovations - let's discover that missing bit together!",
+        "description_mystherai": "Team leader of the programming department. Server management. Integrator. Development of applications with artificial intelligence. Video game development with Unreal Engine and Unity.",
+        "description_bitperdido": "Podcast about artificial intelligence and its impact on society. Insights, discussions, and trends to understand how AI is shaping the world.",
         "description_cortina": "Web development and web applications for internal management. Report creation, shipping label management, customer management, invoice management, among others.",
         "description_movilfly": "Development of web applications for internal work management and reporting.",
         "description_eurobyte": "Repair, maintenance of equipment and mobile terminals. Administration of IT companies, servers and clients.",
         "january": "January",
         "february": "February",
         "august": "August",
-        "september": "September"
+        "september": "September",
+        "now": "Currently"
     },
     "project": {
         "title": "Projects",
